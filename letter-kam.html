@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" style="border-width: 10px;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>YourEdvisorVersion_2.3</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bellota+Text&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Bookmaking%20Styles/Book_Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Bookmaking%20Styles/Book_Navbar-Centered-Brand-Dark.css">
+    <link rel="stylesheet" href="assets/css/Bookmaking%20Styles/Book_Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/Bookmaking%20Styles/Book_Pretty-Search-Form.css">
+    <link rel="stylesheet" href="assets/css/Search-Field-With-Icon.css">
+</head>
+
+<body style="background: rgb(241, 247, 252);color: var(--bs-pink);">
+    <nav class="navbar navbar-light navbar-expand-md py-3" style="background: rgb(88,64,86);margin-bottom: 100px;">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"></a><img class="d-lg-flex align-items-lg-center" src="assets/img/Home%20Images/croppedLogo.png" style="width: 125px;text-align: center;"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="color: rgb(251,248,248);">Your Book&nbsp;</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="index-tina.html">View Book</a><a class="dropdown-item" href="download.html">Purchase Book</a><a class="dropdown-item" href="#">Adjust Privacy Settings</a></div>
+                    </li>
+                    <li class="nav-item"></li>
+                </ul><a class="btn btn-primary ms-auto ms-md-2" role="button" href="cart.html" style="background: rgb(45,32,48);text-align: center;border-color: rgb(239,230,241);">Cart&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none">
+                        <path d="M3 1C2.44772 1 2 1.44772 2 2C2 2.55228 2.44772 3 3 3H4.21922L4.52478 4.22224C4.52799 4.23637 4.5315 4.25039 4.5353 4.26429L5.89253 9.69321L4.99995 10.5858C3.74002 11.8457 4.63235 14 6.41416 14H15C15.5522 14 16 13.5523 16 13C16 12.4477 15.5522 12 15 12L6.41417 12L7.41416 11H14C14.3788 11 14.725 10.786 14.8944 10.4472L17.8944 4.44721C18.0494 4.13723 18.0329 3.76909 17.8507 3.47427C17.6684 3.17945 17.3466 3 17 3H6.28078L5.97014 1.75746C5.85885 1.3123 5.45887 1 5 1H3Z" fill="currentColor"></path>
+                        <path d="M16 16.5C16 17.3284 15.3284 18 14.5 18C13.6716 18 13 17.3284 13 16.5C13 15.6716 13.6716 15 14.5 15C15.3284 15 16 15.6716 16 16.5Z" fill="currentColor"></path>
+                        <path d="M6.5 18C7.32843 18 8 17.3284 8 16.5C8 15.6716 7.32843 15 6.5 15C5.67157 15 5 15.6716 5 16.5C5 17.3284 5.67157 18 6.5 18Z" fill="currentColor"></path>
+                    </svg>&nbsp;</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background: #e4efdf;">
+                    <h4 class="modal-title" style="color: rgb(3,3,3);">Edit Your Book</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6" style="border-style: solid;border-color: rgb(108,67,87);">
+                                <h1 style="color: rgb(0,0,0);text-align: center;">Add Document</h1><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="color: rgb(61,145,84);font-size: 100px;margin-right: -143px;margin-left: 53px;">
+                                    <path d="M9 13H15M12 10L12 16M17 21H7C5.89543 21 5 20.1046 5 19V5C5 3.89543 5.89543 3 7 3H12.5858C12.851 3 13.1054 3.10536 13.2929 3.29289L18.7071 8.70711C18.8946 8.89464 19 9.149 19 9.41421V19C19 20.1046 18.1046 21 17 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <p style="color: rgb(0,0,0);margin-bottom: 6px;">1. Select the designated section</p><select style="background: rgba(237,219,235,0);margin-top: -76px;margin-bottom: 45px;border-radius: 3px;border-color: rgb(57,56,57);height: 31px;">
+                                    <optgroup label="Table of Contents">
+                                        <option value="12">Interested Majors</option>
+                                        <option value="13">Transcripts</option>
+                                        <option value="14">Letters of Rec</option>
+                                        <option value="15">Extracurricular</option>
+                                        <option value="16">Study Abroad</option>
+                                        <option value="17">First Gen Resources</option>
+                                    </optgroup>
+                                </select>
+                                <p style="color: rgb(0,0,0);margin-bottom: 10px;margin-top: -24px;">2. Select Document and Press Upload .&nbsp;</p><input type="file" style="margin-bottom: 86px;color: rgb(0,0,0);"><button class="btn btn-primary" type="submit" style="margin-left: 68px;margin-top: -88px;background: rgb(101,47,96);border-style: none;">Upload</button>
+                            </div>
+                            <div class="col-md-6" style="border-style: solid;border-color: rgb(108,67,87);">
+                                <h1 style="color: rgb(0,0,0);text-align: center;border-color: rgb(108,67,87);">Remove Document</h1><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="font-size: 100px;color: rgb(193,40,30);margin-right: -143px;margin-left: 53px;">
+                                    <path d="M9 13H15M17 21H7C5.89543 21 5 20.1046 5 19V5C5 3.89543 5.89543 3 7 3H12.5858C12.851 3 13.1054 3.10536 13.2929 3.29289L18.7071 8.70711C18.8946 8.89464 19 9.149 19 9.41421V19C19 20.1046 18.1046 21 17 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <p style="color: rgb(0,0,0);margin-bottom: 6px;">1. Select the page you would like to remove</p><select style="background: rgba(237,219,235,0);margin-top: -76px;margin-bottom: 45px;border-radius: 3px;border-color: rgb(57,56,57);height: 31px;width: 185px;">
+                                    <optgroup label="Table of Contents">
+                                        <option value="12">Biology Major</option>
+                                        <option value="13">Nursing Major</option>
+                                        <option value="14">Costa Mesa High School Transcript</option>
+                                        <option value="15">Diego Gomez Letter</option>
+                                        <option value="16">Theresa Kam Letter</option>
+                                        <option value="17">Malia Zimmerman Letter</option>
+                                        <option value="18">Community Service</option>
+                                        <option value="19">Greek Life</option>
+                                        <option value="20">Spirituality</option>
+                                        <option value="21">Sports</option>
+                                        <option value="22">Study Abroad Application</option>
+                                        <option value="23">Study Abroad Finance</option>
+                                        <option value="24">Study Abroad Programs</option>
+                                        <option value="25">First Gen Resources</option>
+                                    </optgroup>
+                                </select>
+                                <p style="color: rgb(0,0,0);margin-bottom: 10px;margin-top: -24px;">2. Press Remove&nbsp;</p><button class="btn btn-primary" type="submit" style="margin-left: 68px;margin-top: 88px;background: rgb(101,47,96);border-style: none;">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="color: rgb(8,8,8);"></p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal" style="border: 1px solid var(--bs-gray-500) ;">Cancel</button></div>
+            </div>
+        </div>
+    </div><button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modal1" style="background: rgb(35,109,104); border-color: rgb(35,109,104); width: 92px; box-shadow: 5px 5px 8px #888888; position:relative; left:740px; bottom:14px;" >Edit</button><input type="text" placeholder="Search" style=" position:relative; left:150px; bottom:10px; width: 230px" />
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal3">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="border-bottom-color: rgb(243,239,246);background: #e4efdf;">
+                    <h4 class="modal-title" style="text-align: left;color: rgb(13,9,11);">Send your book to others</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div><div class="modal-body">
+    <input type="text" placeholder="Their email" style="width: 250px"/>
+</div>
+                <h1 style="color: rgb(101,47,96);font-size: 20px;text-align: center;border-style: none;border-top-style: none;border-top-color: rgba(190,172,207,0.19);border-right-style: none;border-bottom-width: 0px;border-bottom-style: none;border-left-style: none;margin: 1opx;">Share directly on YourEdvisor</h1><div class="form-check" style="color: rgb(11,6,8); position:relative; left:15px; top:4px;"><input id="formCheck-2" class="form-check-input" type="checkbox" /><label class="form-check-label" for="formCheck-2"> <strong>Counselor: </strong> Devon M.</label></div><div class="form-check" style="color: rgb(11,6,8); position:relative; left:15px; top:8px;" ><input id="formCheck-3" class="form-check-input" type="checkbox" /><label class="form-check-label" for="formCheck-3"> <strong> Parent:</strong> Richard James (Father)</label></div>
+                <div class="modal-footer" style="height: 70px;border-top-style: none;"><button class="btn btn-primary" type="button"  data-bs-dismiss="modal" aria-label="Close" style="background: rgb(101,47,96); border-color: rgb(101,47,96)">Done</button>
+
+<!-- <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button> --></div>
+            </div>
+        </div>
+    </div><button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modal2" style="background: rgb(35,109,104); border-color: rgb(35,109,104); box-shadow: 5px 5px 8px #888888; position:relative;left:650px; bottom: 14px" >Download</button>
+<button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modal3" style="background: rgb(35,109,104); border-color: rgb(35,109,104); width: 92px; box-shadow: 5px 5px 8px #888888; position:relative; left:790px; bottom:14px;" >Share</button>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal2">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background: #e4efdf;">
+                    <h4 class="modal-title" style="color: rgb(4,4,4);">Purchase Your Book</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="text-start" style="color: rgb(0,0,0);">Almost there...<br></p><img src="assets/img/Bookmaking%20images/login.png" style="width: 399px;height: 248px;margin: 0px;padding: 0px;">
+                    <p class="text-center" style="color: rgb(101,47,96);margin: 20px;"><strong>&nbsp;Please consider purchasing for your own personal records as well.</strong><br></p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal" style="border-style: solid;border-color: var(--bs-gray-500);">No, Thanks</button><a class="btn btn-primary" role="button" style="background: rgb(101,47,96);border-color: rgb(101,47,96);font-weight: bold;" href="download.html">Purchase</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 offset-xl-0" style="background: url(&quot;Front Page (1).png&quot;) center no-repeat, #f2f5dc;--bs-body-bg: var(--bs-blue);--bs-body-color: var(--bs-gray-900);color: var(--bs-pink);height: 860px;width: 590px;border-style: solid;border-color: var(--bs-gray-900);text-align: center;"><a class="btn btn-primary" role="button" style="background: rgb(213,196,211);margin: 24px;color: rgb(0,0,0);font-weight: bold;box-shadow: 0px 0px 3px 1px rgb(58,56,56);border-color: rgb(213,196,211);" href="index-tina.html">&nbsp;Table of Contents</a><img src="assets/img/Bookmaking%20images/Front%20Page%20(1).png" style="width: 500px;"></div>
+            <div class="col text-center" style="width: 550px;height: 870px;border-radius: 60;border: 3px solid var(--bs-gray-900);border-bottom: 15px outset rgb(194,195,195);background: #f2f5dc;color: rgb(6,5,5);font-size: 22px;">
+                <h1 style="color: rgb(25,67,68);text-align: center;padding: 14px;font-weight: bold;">Letter of Recommendation</h1>
+                <h1 style="font-size: 20px;color: rgb(88,64,86);padding: 0px;margin: 1px 1px 1px;text-align: left;font-weight: bold;margin-bottom: 24px;">Theresa Kam - Costa Mesa High School</h1>
+                <figure class="figure text-end">
+                    <figcaption class="figure-caption"></figcaption>
+                </figure><img src="assets/img/Bookmaking%20images/Theresa.jpg" style="width: 430px;margin-top: -18px;filter: blur(5px);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="color: rgb(88,64,86);margin-left: 386px;">
+                    <path d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <h6 style="text-align: left;"></h6>
+                <p style="text-align: center;font-size: 12px;width: 424px;margin: 0px 51px 16px 45px;margin-left: 137px;margin-bottom: -84px;"><strong><em>*Under the FERPA Act, recommendation letters are completely confidential and students are not allowed to view or download the contents of the letter*</em></strong></p><a class="btn btn-primary" role="button" style="background: rgb(88,64,86);margin: 2px;width: 75px;height: 30px;font-size: 13px;text-align: left;border-color: rgb(34,38,40);padding: 5px 12px;margin-top: 100px;" href="letter-diego.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none">
+                        <path d="M10 19L3 12M3 12L10 5M3 12L21 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>&nbsp;Back</a><a class="btn btn-primary" role="button" style="background: rgb(88,64,86);border-color: rgb(34,38,40);width: 75px;height: 30px;margin: 5px 0px 0px;padding: 5px 12px;font-size: 13px;margin-top: 98px;" href="letter-zim.html">&nbsp;Next&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none">
+                        <path d="M14 5L21 12M21 12L14 19M21 12L3 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>&nbsp;</a>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/Book_verifyLogin.js"></script>
+    <script src="assets/js/CARight-Sidebar.js"></script>
+    <script src="assets/js/dropdown-search-bs4.js"></script>
+    <script src="assets/js/forms.js"></script>
+    <script src="assets/js/Multi-Select-Dropdown-by-Jigar-Mistry.js"></script>
+    <script src="assets/js/Profile-Edit-Form.js"></script>
+    <script src="assets/js/verifyLogin.js"></script>
+</body>
+
+</html>

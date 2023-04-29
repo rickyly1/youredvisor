@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>YourEdvisorVersion_2.3</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bellota+Text&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&amp;display=swap">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="../assets/css/Questionnaire%20Styles/dropdown-search-bs4.css">
+    <link rel="stylesheet" href="../assets/css/Questionnaire%20Styles/Multi-Select-Dropdown-by-Jigar-Mistry.css">
+    <link rel="stylesheet" href="../assets/css/Questionnaire%20Styles/styles.css">
+    <link rel="stylesheet" href="../assets/css/Search-Field-With-Icon.css">
+</head>
+
+<body>
+    <div id="questionnaire-header" class="nav-container" style="background: #584056;">
+        <h1 class="text-start" style="font-family: &quot;Inter&quot;, &quot;Arial&quot;;color: white;text-align: center;height: 80px;"><img src="../assets/img/Logo3.png" alt="YourEdvisor Logo" style="height: 100px;text-align: left;"><strong>YourQuestionnaire</strong></h1>
+    </div>
+    <div id="name-set" style="background: #EEEEEE;width: 900px;height: 450px;margin: auto;margin-top: 80px;border: 1px solid grey;display: block;">
+        <div class="progress" style="width: 80%;height: 20px;margin: 30px auto;border: 1px solid #584056 ;">
+            <div class="progress-bar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="background-color: orange;width: 10%;">10%</div>
+        </div>
+        <div class="form-container" style="background: white;margin: auto;width: 650px;height: auto;padding: 30px;border: 1px solid #584056;">
+            <form>
+                <p>What is your name?<br></p>
+                <p><small></small></p><input class="form-control" type="text" id="first-name" style="height: 30px;width: 50%;border: 1px solid grey;" placeholder="First Name"><input class="form-control" type="text" id="last-name" style="height: 30px;width: 50%;border: 1px solid grey;margin-top: 20px;" placeholder="Last Name">
+            </form><small id="name-error" style="color: red;display: none;"><br>Please fill out all entry forms<br></small>
+        </div>
+        <div style="margin: 0 auto;margin-top: 30px;width: 230px;"><button class="btn btn-primary" type="button" style="width: 90px;margin-right: 50px;background: #fca311;visibility: hidden;">Previous</button><button class="btn btn-primary" id="name-next" type="button" style="width: 90px;background: #fca311;border-color: rgb(88,64,86);" data-bs-target="nickname.html">Next</button></div>
+    </div>
+    <div id="nickname-set" style="background: #EEEEEE;width: 900px;height: 450px;margin: auto;margin-top: 80px;border: 1px solid grey;display: none;">
+        <div class="progress" style="width: 80%;height: 20px;margin: 30px auto;border: 1px solid #584056 ;">
+            <div class="progress-bar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="background: #fca311;width: 20%;">20%</div>
+        </div>
+        <div class="form-container" style="background: white;margin: auto;width: 650px;height: auto;padding: 30px;border: 1px solid grey;">
+            <form>
+                <p>Would you prefer to go by any other name? (Leave blank if you do not)<br></p>
+                <p><small></small></p><input class="form-control" type="text" id="nickname" style="height: 30px;width: 50%;border: 1px solid grey;" placeholder="Nickname">
+            </form>
+        </div>
+        <div style="margin: 0 auto;margin-top: 30px;width: 230px;"><button class="btn btn-primary" id="nickname-previous" type="button" style="width: 90px;margin-right: 50px;background: #fca311;border-color: #584056;border-top-color: rgb(255,;border-right-color: 255,;border-bottom-color: 255);border-left-color: 255,;">Previous</button><button class="btn btn-primary" id="nickname-next" type="button" style="width: 90px;background: #fca311;border-color: #584056;">Next</button></div>
+    </div>
+    <div id="school-set" style="background: #EEEEEE;width: 900px;height: 450px;margin: auto;margin-top: 80px;border: 1px solid grey;display: none;">
+        <div class="progress" style="width: 80%;height: 20px;margin: 30px auto;border: 1px solid #584056 ;">
+            <div class="progress-bar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="background: #fca311;width: 30%;">30%</div>
+        </div>
+        <div class="form-container" style="background: white;margin: auto;width: 650px;height: auto;padding: 30px;border: 1px solid grey;">
+            <form>
+                <p>Where do you currently go to school?<br></p>
+                <p><small></small></p><input class="form-control" type="text" id="school" style="height: 30px;width: 50%;border: 1px solid grey;" placeholder="School Name">
+            </form><small id="school-error" style="color: red;display: none;"><br>Please fill out all entry forms<br></small>
+        </div>
+        <div style="margin: 0 auto;margin-top: 30px;width: 230px;"><button class="btn btn-primary" id="school-previous" type="button" style="width: 90px;margin-right: 50px;background: #fca311;border-color: #584056;">Previous</button><button class="btn btn-primary" id="school-next" type="button" style="width: 90px;background: #fca311;border-color: #584056;">Next</button></div>
+    </div>
+    <div id="grade-set" style="background: #EEEEEE;width: 900px;height: 450px;margin: auto;margin-top: 80px;border: 1px solid grey;display: none;">
+        <div class="progress" style="width: 80%;height: 20px;margin: 30px auto;border: 1px solid grey;">
+            <div class="progress-bar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">40%</div>
+        </div>
+        <div class="form-container" style="background: white;margin: auto;width: 650px;height: auto;padding: 30px;border: 1px solid grey;">
+            <form>
+                <p>What grade are you currently in?<br></p>
+                <p><small></small></p>
+            </form><select id="grade" style="border: 1px solid grey;">
+                <option value="6" selected="">6 - Middle School</option>
+                <option value="7">7 - Middle School</option>
+                <option value="8">8 - Middle School</option>
+                <option value="9">9 - Freshman</option>
+                <option value="10">10 - Sophomore</option>
+                <option value="11">11 - Junior</option>
+                <option value="12" selected="">12 - Senior</option>
+            </select>
+        </div>
+        <div style="margin: 0 auto;margin-top: 30px;width: 230px;"><button class="btn btn-primary" id="grade-previous" type="button" style="width: 90px;margin-right: 50px;">Previous</button><button class="btn btn-primary" id="grade-next" type="button" style="width: 90px;">Next</button></div>
+    </div>
+    <div id="contact-set" style="background: #EEEEEE;width: 900px;height: 450px;margin: auto;margin-top: 80px;border: 1px solid grey;display: none;">
+        <div class="progress" style="width: 80%;height: 20px;margin: 30px auto;border: 1px solid grey;">
+            <div class="progress-bar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">50%</div>
+        </div>
+        <div class="form-container" style="background: white;margin: auto;width: 650px;height: auto;padding: 30px;border: 1px solid grey;">
+            <form>
+                <p>Please enter your primary E-mail and phone number.<br></p>
+                <p><small></small></p><input class="form-control" type="text" id="email" style="height: 30px;width: 50%;border: 1px solid grey;" placeholder="E-mail"><input class="form-control" type="text" id="phone" style="height: 30px;width: 50%;border: 1px solid grey;margin-top: 20px;" placeholder="(###) ###-####">
+            </form><small id="contact-error" style="color: red;display: none;"><br>Please provide a valid e-mail and phone number<br></small>
+        </div>
+        <div style="margin: 0 auto;margin-top: 30px;width: 230px;"><button class="btn btn-primary" id="contact-previous" type="button" style="width: 90px;margin-right: 50px;">Previous</button><button class="btn btn-primary" id="contact-next" type="button" style="width: 90px;">Next</button></div>
+    </div>
+    <div id="areas-set" style="background: #EEEEEE;width: 900px;height: 450px;margin: auto;margin-top: 80px;border: 1px solid grey;display: none;">
+        <div class="progress" style="width: 80%;height: 20px;margin: 30px auto;border: 1px solid grey;">
+            <div class="progress-bar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">60%</div>
+        </div>
+        <div class="form-container" style="background: white;margin: auto;width: 650px;height: auto;padding: 30px;border: 1px solid grey;">
+            <form>
+                <p>What are the areas that you want help with?</p>
+                <p><small>Note: Your answer to this question will help us determine the focus of primary and auxiliary content in YourBook.</small></p>
+                <div class="form-check"><input class="form-check-input" type="checkbox" id="areas-college"><label class="form-check-label" for="formCheck-4">College</label></div>
+                <div class="form-check"><input class="form-check-input" type="checkbox" id="areas-scholarships"><label class="form-check-label" for="formCheck-3">Scholarships</label></div>
+                <div class="form-check"><input class="form-check-input" type="checkbox" id="areas-career"><label class="form-check-label" for="formCheck-2">Career</label></div>
+                <div class="form-check"><input class="form-check-input" type="checkbox" id="areas-self"><label class="form-check-label" for="formCheck-1">Self-Growth</label></div>
+            </form>
+        </div>
+        <div style="margin: 0 auto;margin-top: 30px;width: 230px;"><button class="btn btn-primary" id="areas-previous" type="button" style="width: 90px;margin-right: 50px;">Previous</button><button class="btn btn-primary" id="areas-next" type="button" style="width: 90px;">Next</button></div>
+    </div>
+    <div id="colleges-set" style="background: #EEEEEE;width: 900px;height: 450px;margin: auto;margin-top: 80px;border: 1px solid grey;display: none;">
+        <div class="progress" style="width: 80%;height: 20px;margin: 30px auto;border: 1px solid grey;">
+            <div class="progress-bar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">70%</div>
+        </div>
+        <div class="form-container" style="background: white;margin: auto;width: 650px;height: auto;padding: 30px;border: 1px solid grey;">
+            <form>
+                <p>Are there already colleges that you are already interested in?</p>
+                <p></p>
+                <div class="form-check" name="radioButton1"><input class="form-check-input" type="radio" id="colleges-yes" name="colleges-radio"><label class="form-check-label" for="formCheck-1">Yes</label></div>
+                <div class="form-check" name="radioButton2"><input class="form-check-input" type="radio" id="colleges-no" name="colleges-radio"><label class="form-check-label" for="formCheck-2">No</label></div>
+            </form><small id="colleges-error" style="color: red;display: none;"><br>Please select an option<br></small>
+        </div>
+        <div style="margin: 0 auto;margin-top: 30px;width: 230px;"><button class="btn btn-primary" id="colleges-previous" type="button" style="width: 90px;margin-right: 50px;">Previous</button><button class="btn btn-primary" id="colleges-next" type="button" style="width: 90px;">Next</button></div>
+    </div>
+    <div id="colleges-no-1-set" style="background: #EEEEEE;width: 900px;height: 450px;margin: auto;margin-top: 80px;border: 1px solid grey;display: none;">
+        <div class="progress" style="width: 80%;height: 20px;margin: 30px auto;border: 1px solid grey;">
+            <div class="progress-bar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">80%</div>
+        </div>
+        <div class="form-container" style="background: white;margin: auto;width: 650px;height: auto;padding: 30px;border: 1px solid grey;">
+            <form>
+                <p>Are you planning on pursuing a talent (ie: Art/Film, Theater/Acting, Singing)?</p>
+                <p></p>
+                <div class="form-check" name="radioButton1"><input class="form-check-input" type="radio" id="talent-yes" name="talent"><label class="form-check-label" for="formCheck-1">Yes</label></div>
+                <div class="form-check" name="radioButton2"><input class="form-check-input" type="radio" id="talent-no" name="talent"><label class="form-check-label" for="formCheck-2">No</label></div>
+            </form><small id="colleges-no-1-error" style="color: red;display: none;"><br>Please select an option<br></small>
+        </div>
+        <div style="margin: 0 auto;margin-top: 30px;width: 230px;"><button class="btn btn-primary" id="colleges-no-1-previous" type="button" style="width: 90px;margin-right: 50px;">Previous</button><button class="btn btn-primary" id="colleges-no-1-next" type="button" style="width: 90px;">Next</button></div>
+    </div>
+    <div id="colleges-no-2-set" style="background: #EEEEEE;width: 900px;height: 450px;margin: auto;margin-top: 80px;border: 1px solid grey;display: none;">
+        <div class="progress" style="width: 80%;height: 20px;margin: 30px auto;border: 1px solid grey;">
+            <div class="progress-bar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">85%</div>
+        </div>
+        <div class="form-container" style="background: white;margin: auto;width: 650px;height: auto;padding: 30px;border: 1px solid grey;">
+            <form>
+                <p>Do you want to stay within a 100 mile radius from your home?</p>
+                <p></p>
+                <div class="form-check" name="radioButton1"><input class="form-check-input" type="radio" id="radius-yes" name="radius"><label class="form-check-label" for="formCheck-1">Yes</label></div>
+                <div class="form-check" name="radioButton2"><input class="form-check-input" type="radio" id="radius-no" name="radius"><label class="form-check-label" for="formCheck-2">No</label></div>
+            </form><small id="colleges-no-2-error" style="color: red;display: none;"><br>Please select an option<br></small>
+        </div>
+        <div style="margin: 0 auto;margin-top: 30px;width: 230px;"><button class="btn btn-primary" id="colleges-no-2-previous" type="button" style="width: 90px;margin-right: 50px;">Previous</button><button class="btn btn-primary" id="colleges-no-2-next" type="button" style="width: 90px;">Next</button></div>
+    </div>
+    <div id="colleges-no-3-set" style="background: #EEEEEE;width: 900px;height: 450px;margin: auto;margin-top: 80px;border: 1px solid grey;display: none;">
+        <div class="progress" style="width: 80%;height: 20px;margin: 30px auto;border: 1px solid grey;">
+            <div class="progress-bar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">85%</div>
+        </div>
+        <div class="form-container" style="background: white;margin: auto;width: 650px;height: auto;padding: 30px;border: 1px solid grey;">
+            <div class="dropdown"><button class="btn btn-secondary dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false" data-bs-toggle="dropdown">Majors</button>
+                <div class="dropdown-menu"><input type="text" class="form-control dropdown-search-input" placeholder="Search.."><a class="dropdown-item" href="#">Biology</a><a class="dropdown-item" href="#">Business Administration</a><a class="dropdown-item" href="#">Computer Science</a><a class="dropdown-item" href="#">Informatics</a><a class="dropdown-item" href="#">Nursing</a><a class="dropdown-item" href="#">Psychology</a></div>
+            </div>
+            <form>
+                <p></p>
+            </form>
+        </div>
+        <div style="margin: 0 auto;margin-top: 30px;width: 230px;"><button class="btn btn-primary" id="colleges-no-3-previous" type="button" style="width: 90px;margin-right: 50px;">Previous</button><button class="btn btn-primary" id="colleges-no-3-next" type="button" style="width: 90px;">Next</button></div>
+    </div>
+    <div id="colleges-no-4-set" style="background: #EEEEEE;width: 900px;height: 450px;margin: auto;margin-top: 80px;border: 1px solid grey;display: none;">
+        <div class="progress" style="width: 80%;height: 20px;margin: 30px auto;border: 1px solid grey;">
+            <div class="progress-bar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">90%</div>
+        </div>
+        <div class="form-container" style="background: white;margin: auto;width: 650px;height: auto;padding: 30px;border: 1px solid grey;">
+            <form>
+                <p>Do you prefer Small or Large class sizes?</p>
+                <p></p>
+                <div class="form-check" name="radioButton1"><input class="form-check-input" type="radio" id="small-class" name="class-size"><label class="form-check-label" for="formCheck-3">Small</label></div>
+                <div class="form-check" name="radioButton2"><input class="form-check-input" type="radio" id="large-class" name="class-size"><label class="form-check-label" for="formCheck-4">Large</label></div>
+            </form><small id="colleges-no-4-error" style="color: red;display: none;"><br>Please select an option<br></small>
+        </div>
+        <div style="margin: 0 auto;margin-top: 30px;width: 230px;"><button class="btn btn-primary" id="colleges-no-4-previous" type="button" style="width: 90px;margin-right: 50px;">Previous</button><button class="btn btn-primary" id="colleges-no-4-next" type="button" style="width: 90px;">Next</button></div>
+    </div>
+    <div id="colleges-yes-1-set" style="background: #EEEEEE;width: 900px;height: 450px;margin: auto;margin-top: 80px;border: 1px solid grey;display: none;">
+        <div class="progress" style="width: 80%;height: 20px;margin: 30px auto;border: 1px solid grey;">
+            <div class="progress-bar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">80%</div>
+        </div>
+        <div class="form-container" style="background: white;margin: auto;width: 650px;height: auto;padding: 30px;border: 1px solid grey;">
+            <div class="dropdown"><button class="btn btn-secondary dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false" data-bs-toggle="dropdown">Select Colleges</button>
+                <div class="dropdown-menu"><input type="text" class="form-control dropdown-search-input" placeholder="Search.."><a class="dropdown-item" href="#">California State University, Long Beach</a><a class="dropdown-item" href="#">University of California, Berkeley</a><a class="dropdown-item" href="#">University of California, Davis</a><a class="dropdown-item" href="#">University of CaIifornia, Irvine</a><a class="dropdown-item" href="#">University of California, Los Angeles</a><a class="dropdown-item" href="#">University of California, San Diego</a></div>
+            </div>
+            <form>
+                <p></p>
+            </form>
+        </div>
+        <div style="margin: 0 auto;margin-top: 30px;width: 230px;"><button class="btn btn-primary" id="colleges-yes-1-previous" type="button" style="width: 90px;margin-right: 50px;">Previous</button><button class="btn btn-primary" id="colleges-yes-1-next" type="button" style="width: 90px;">Next</button></div>
+    </div>
+    <div id="colleges-yes-2-set" style="background: #EEEEEE;width: 900px;height: 450px;margin: auto;margin-top: 80px;border: 1px solid grey;display: none;">
+        <div class="progress" style="width: 80%;height: 20px;margin: 30px auto;border: 1px solid grey;">
+            <div class="progress-bar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">90%</div>
+        </div>
+        <div class="form-container" style="background: white;margin: auto;width: 650px;height: auto;padding: 30px;border: 1px solid grey;">
+            <form>
+                <p>Have you visited any of these Colleges / Universities?</p>
+                <p></p>
+                <div class="form-check" name="radioButton1"><input class="form-check-input" type="radio" id="visited-yes" name="visited-radio"><label class="form-check-label" for="formCheck-5">Yes</label></div>
+                <div class="form-check" name="radioButton2"><input class="form-check-input" type="radio" id="visited-no" name="visited-radio"><label class="form-check-label" for="formCheck-6">No</label></div>
+            </form><small id="colleges-yes-2-error" style="color: red;display: none;"><br>Please select an option<br></small>
+        </div>
+        <div style="margin: 0 auto;margin-top: 30px;width: 230px;"><button class="btn btn-primary" id="colleges-yes-2-previous" type="button" style="width: 90px;margin-right: 50px;">Previous</button><button class="btn btn-primary" id="colleges-yes-2-next" type="button" style="width: 90px;">Next</button></div>
+    </div>
+    <div id="colleges-yes-3-set" style="background: #EEEEEE;width: 900px;height: 450px;margin: auto;margin-top: 80px;border: 1px solid grey;display: none;">
+        <div class="progress" style="width: 80%;height: 20px;margin: 30px auto;border: 1px solid grey;">
+            <div class="progress-bar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%</div>
+        </div>
+        <div class="form-container" style="background: white;margin: auto;width: 650px;height: auto;padding: 30px;border: 1px solid grey;">
+            <form>
+                <p>What did you like about them?</p>
+                <p><small>Note: Your answer to this question will help us determine the focus of primary and auxiliary content in YourBook.</small></p>
+                <div style="overflow: hidden;padding: 6px;">
+                    <div class="form-check" style="float: left;margin-right: 6px;width: 175px;"><input class="form-check-input" type="checkbox" id="like-vibes"><label class="form-check-label" for="formCheck-10">Vibes</label></div>
+                    <div class="form-check" style="float: left;margin-right: 6px;width: 175px;"><input class="form-check-input" type="checkbox" id="like-curriculum"><label class="form-check-label" for="formCheck-11">Curriculum</label></div>
+                    <div class="form-check" style="float: left;margin-right: 6px;width: 175px;"><input class="form-check-input" type="checkbox" id="like-class"><label class="form-check-label" for="formCheck-12">Class Size</label></div>
+                    <div class="form-check" style="float: left;margin-right: 6px;width: 175px;"><input class="form-check-input" type="checkbox" id="like-location"><label class="form-check-label" for="formCheck-13">Location</label></div>
+                    <div class="form-check" style="float: left;margin-right: 6px;width: 175px;"><input class="form-check-input" type="checkbox" id="like-majors"><label class="form-check-label" for="formCheck-14">Availability of Majors</label></div>
+                    <div class="form-check" style="float: left;margin-right: 6px;width: 175px;"><input class="form-check-input" type="checkbox" id="like-life"><label class="form-check-label" for="formCheck-15">Campus Life</label></div>
+                    <div class="form-check" style="float: left;margin-right: 6px;width: 175px;"><input class="form-check-input" type="checkbox" id="like-programs"><label class="form-check-label" for="formCheck-7">Programs</label></div>
+                    <div class="form-check" style="float: left;margin-right: 6px;width: 175px;"><input class="form-check-input" type="checkbox" id="like-campus"><label class="form-check-label" for="formCheck-8">Campus Size</label></div>
+                    <div class="form-check" style="float: left;margin-right: 6px;width: 175px;"><input class="form-check-input" type="checkbox" id="like-cost"><label class="form-check-label" for="formCheck-9">Cost and Fees</label></div>
+                </div>
+            </form>
+        </div>
+        <div style="margin: 0 auto;margin-top: 30px;width: 230px;"><button class="btn btn-primary" id="colleges-yes-3-previous" type="button" style="width: 90px;margin-right: 50px;">Previous</button><button class="btn btn-primary" id="colleges-yes-3-next" type="button" style="width: 90px;">Next</button></div>
+    </div>
+    <div id="submit-set" style="background: #EEEEEE;width: 900px;height: 600px;margin: auto;margin-top: 80px;border: 1px solid grey;display: none;">
+        <div class="form-container" style="background: white;margin: auto;width: 650px;height: auto;padding: 30px;margin-top: 50px;border: 1px solid #584056;"><span class="text-center" id="submission-title" style="margin: 0 auto;display: table;">Review Your Responses</span><span class="text-center" style="margin: 0 auto;display: table;visibility: hidden;">Review Your Responses</span><span id="full-name-submit" style="display: table;margin-left: 50px;">Text</span><span id="nickname-submit" style="display: table;margin-left: 50px;">Text</span><span id="school-submit" style="display: table;margin-left: 50px;">Text</span><span id="grade-submit" style="display: table;margin-left: 50px;">Text</span><span id="phone-submit" style="display: table;margin-left: 50px;">Text</span><span id="email-submit" style="display: table;margin-left: 50px;">Text</span><span id="areas-submit" style="display: table;margin-left: 50px;">Text</span><span id="knows-submit" style="display: table;margin-left: 50px;">Text</span><span id="talent-submit" style="display: table;margin-left: 50px;">Text</span><span id="radius-submit" style="display: table;margin-left: 50px;">Text</span><span id="class-size-submit" style="display: table;margin-left: 50px;">Text</span><span id="visited-submit" style="display: table;margin-left: 50px;">Text</span><span id="preferences-submit" style="display: table;margin-left: 50px;">Text</span></div>
+        <div style="margin: 0 auto;margin-top: 30px;width: 230px;"><button class="btn btn-primary" id="submit-previous" type="button" style="width: 90px;margin-right: 50px;background: #fca311;/*visibility: hidden;*/">Previous</button><a class="btn btn-primary" role="button" id="submit-next" style="width: 90px;background: #fca311;border-color: rgb(88,64,86);" data-bs-target="nickname.html" href="../index-tina.html">Submit</a></div>
+    </div>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bs-init.js"></script>
+    <script src="../assets/js/Book_verifyLogin.js"></script>
+    <script src="../assets/js/CARight-Sidebar.js"></script>
+    <script src="../assets/js/dropdown-search-bs4.js"></script>
+    <script src="../assets/js/forms.js"></script>
+    <script src="../assets/js/Multi-Select-Dropdown-by-Jigar-Mistry.js"></script>
+    <script src="../assets/js/Profile-Edit-Form.js"></script>
+    <script src="../assets/js/verifyLogin.js"></script>
+</body>
+
+</html>
